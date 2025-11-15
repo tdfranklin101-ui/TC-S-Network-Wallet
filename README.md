@@ -1,22 +1,27 @@
-# TC-S-Network-Wallet
+# TC-S Network Wallet
 
-Solar wallet application
+SOLAR token wallet and transaction management system.
 
-## Part of TC-S Network Platform
+## Features
 
-This repository is part of the TC-S Network 14-repository microservices architecture. All services connect to a shared Supabase database and work together as a cohesive platform.
+- Wallet creation and management
+- SOLAR token balance tracking
+- Transaction history
+- World ID verification support
 
 ## Setup
 
 ```bash
 npm install
+cp .env.example .env
 npm run dev
 ```
 
-## Documentation
+## API Endpoints
 
-See the main [TC-S Network documentation](https://github.com/tdfranklin101-ui/TC-S-Network-Shared) for complete setup instructions.
+- `GET /api/wallet/:userId` - Get wallet details
+- `GET /api/transactions/:userId` - Get transaction history
 
 ## License
 
-MIT © TC-S Network Foundation
+MIT - TC-S Network Foundation
