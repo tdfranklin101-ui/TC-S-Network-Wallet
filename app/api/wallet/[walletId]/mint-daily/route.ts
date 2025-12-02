@@ -5,6 +5,9 @@ import { eq } from "drizzle-orm";
 import { sql } from "drizzle-orm";
 import ws from "ws";
 
+// Specify Node.js runtime for Vercel (required for ws package)
+export const runtime = 'nodejs';
+
 neonConfig.webSocketConstructor = ws;
 
 const wallets = pgTable("wallets", {
